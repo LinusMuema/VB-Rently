@@ -24,6 +24,10 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Add_User = New System.Windows.Forms.Button()
         Me.Add_Space = New System.Windows.Forms.Button()
+        Me.Edit_User = New System.Windows.Forms.Button()
+        Me.Edit_Space = New System.Windows.Forms.Button()
+        Me.Add_Transaction = New System.Windows.Forms.Button()
+        Me.Edit_Transaction = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Add_User
@@ -37,18 +41,58 @@ Partial Class Form1
         '
         'Add_Space
         '
-        Me.Add_Space.Location = New System.Drawing.Point(352, 39)
+        Me.Add_Space.Location = New System.Drawing.Point(234, 39)
         Me.Add_Space.Name = "Add_Space"
         Me.Add_Space.Size = New System.Drawing.Size(156, 52)
         Me.Add_Space.TabIndex = 1
         Me.Add_Space.Text = "Add Space"
         Me.Add_Space.UseVisualStyleBackColor = True
         '
+        'Edit_User
+        '
+        Me.Edit_User.Location = New System.Drawing.Point(40, 145)
+        Me.Edit_User.Name = "Edit_User"
+        Me.Edit_User.Size = New System.Drawing.Size(141, 51)
+        Me.Edit_User.TabIndex = 2
+        Me.Edit_User.Text = "Edit User"
+        Me.Edit_User.UseVisualStyleBackColor = True
+        '
+        'Edit_Space
+        '
+        Me.Edit_Space.Location = New System.Drawing.Point(234, 146)
+        Me.Edit_Space.Name = "Edit_Space"
+        Me.Edit_Space.Size = New System.Drawing.Size(156, 50)
+        Me.Edit_Space.TabIndex = 3
+        Me.Edit_Space.Text = "Edit Space"
+        Me.Edit_Space.UseVisualStyleBackColor = True
+        '
+        'Add_Transaction
+        '
+        Me.Add_Transaction.Location = New System.Drawing.Point(495, 39)
+        Me.Add_Transaction.Name = "Add_Transaction"
+        Me.Add_Transaction.Size = New System.Drawing.Size(134, 51)
+        Me.Add_Transaction.TabIndex = 4
+        Me.Add_Transaction.Text = "Add Transaction"
+        Me.Add_Transaction.UseVisualStyleBackColor = True
+        '
+        'Edit_Transaction
+        '
+        Me.Edit_Transaction.Location = New System.Drawing.Point(495, 146)
+        Me.Edit_Transaction.Name = "Edit_Transaction"
+        Me.Edit_Transaction.Size = New System.Drawing.Size(134, 50)
+        Me.Edit_Transaction.TabIndex = 5
+        Me.Edit_Transaction.Text = "Edit Transaction"
+        Me.Edit_Transaction.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Edit_Transaction)
+        Me.Controls.Add(Me.Add_Transaction)
+        Me.Controls.Add(Me.Edit_Space)
+        Me.Controls.Add(Me.Edit_User)
         Me.Controls.Add(Me.Add_Space)
         Me.Controls.Add(Me.Add_User)
         Me.Name = "Form1"
@@ -59,4 +103,8 @@ Partial Class Form1
 
     Friend WithEvents Add_User As Button
     Friend WithEvents Add_Space As Button
+    Friend WithEvents Edit_User As Button
+    Friend WithEvents Edit_Space As Button
+    Friend WithEvents Add_Transaction As Button
+    Friend WithEvents Edit_Transaction As Button
 End Class
