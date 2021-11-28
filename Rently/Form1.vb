@@ -54,7 +54,7 @@
 
     Private Sub Add_Transaction_Click(sender As Object, e As EventArgs) Handles Add_Transaction.Click
         Try
-            Dim name = "H05"
+            Dim name = "GH7A5SD02"
             Dim amount = 15000
             Dim paydate = "2021/11/28"
 
