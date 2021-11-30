@@ -51,4 +51,8 @@
             con.Close()
         End Try
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) 
+        DashboardUI.Show()
+    End Sub
 End Class
