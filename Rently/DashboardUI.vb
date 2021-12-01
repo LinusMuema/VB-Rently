@@ -6,6 +6,7 @@ Public Class DashboardUI
 
     Private Sub DashboardUI_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'loading the first 5 tenants and 5 spaces
+        Me.CenterToScreen()
         Dim tenantsQuery As String = "SELECT TOP 5 * FROM users"
         Dim spacesQuery As String = "SELECT TOP 5 * FROM spaces"
 
